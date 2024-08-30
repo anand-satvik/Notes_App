@@ -24,7 +24,9 @@ app.use(cors({ origin: ["http://localhost:5173"], credentials: true }))
 app.listen(3000, () => {
   console.log("Server is running on port 3000")
 })
-
+app.get("/api/test",(req,res)=>{
+  res.send("ok")
+})
 // import routes
 import authRouter from "./routes/auth.route.js"
 import noteRouter from "./routes/note.route.js"
