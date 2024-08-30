@@ -1,0 +1,12 @@
+{
+    "buildCommand": "cd frontend && npm install && npx run build",
+    "outputDirectory": "frontend/dist",
+    "framework": "vite",
+    "rewrites": [
+      {
+        "source": "/backend/(.*)",
+        "destination": "/backend/index.js"
+      }
+    ]
+  }
+  
